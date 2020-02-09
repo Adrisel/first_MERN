@@ -6,6 +6,7 @@ router.get('/', async(req,res)=>{
     const tasks = await Task.find()
     console.log(tasks)
     res.json(tasks)
+    
 })
 
 router.get('/:id', async(req, res)=>{
